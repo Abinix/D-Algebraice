@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turunan Fungsi Aljabar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Latar Belakang dan Header -->
+    <div class="background">
+        <header class="header">
+            <a href="#" class="logo"> D'Algebraic</a>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="nav-menu">
+    <a href="index.html" class="nav-link">Beranda</a>
+    <a href="index.html#calculator" class="nav-link">Kalkulator</a>
+    <a href="quiz.html" class="nav-link">Quiz</a>
+    <a href="index.html#team" class="nav-link">Tim</a>
+            </nav>
+        </header>
+    </div>
+
+    <!-- Bagian Beranda -->
+    <section id="home" class="section">
+        <div class="home-content">
+            <div class="text-content">
+                <h1>Memahami Turunan Fungsi Aljabar</h1>
+                <h3>Tujuan dari dibuatnya website ini adalah untuk menambah wawasan kita dalam matematika terutama Turunan Fungsi Aljabar. Kami terus mengembangkan website ini seiring dengan peningkatan kemampuan kami.</h3>
+                <button class="start-button" onclick="scrollToRules()">Ayo Mulai Belajar</button>
+            </div>
+            <div class="image-content">
+                <img src="kal.jpg" alt="kal" class="intro-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Aturan (Dengan Accordion) -->
+    <section id="rules" class="section rules-section">
+        <h1>Apa Itu Turunan Fungsi Aljabar?</h1>
+        <div class="accordion">
+            <div class="accordion-item">
+                <button class="accordion-title">Pengertian Turunan</button>
+                <div class="accordion-content">
+                    <p>Turunan fungsi aljabar adalah fungsi baru hasil penurunan pangkat dari fungsi sebelumnya menurut aturan yang telah ditetapkan. Jika diimplementasikan di dalam grafik fungsi, turunan ini merupakan gradien garis singgung terhadap grafik di titik tertentu. Tingkat turunan fungsi tidak terbatas pada satu tingkat saja, tetapi juga bisa dua tingkat, tiga tingkat, dan seterusnya. Konsep turunan setiap tingkatnya juga sama. Hanya saja, fungsi yang diturunkan berbeda-beda karena mengacu pada hasil turunan sebelumnya. 
+                    <p>persamaan fungsi aljabar yang derajat polinomnya lebih dari 1 (pangkat lebih dari 1). Untuk itu, kamu bisa menggunakan rumus-rumus berikut.</p>
+                    </section>
+                    <section id="rules" class="section rules-section">
+                     <div class="accordion">
+            <div class="accordion-item">
+                <button class="accordion-title">Beberapa Aturan</button>
+                <div class="accordion-content">
+<p>1. f(x) = b → f’(x) = 0
+Suatu konstanta akan bernilai nol jika diturunkan,
+<br>contoh f(x) = 15 → f’(x) = 0.</p>
+2. f(x) = bx → f’(x) = b
+Jika variabel x diturunkan terhadap x, akan menghasilkan 1.
+<br>contoh: f(x) = x → f’(x) = 1
+<p>3. f(x) = ax^n → f’(x) = naxn-1
+<br>Rumus di atas berlaku untuk turunan fungsi pangkat, ya. Saat menurunkan suatu fungsi, artinya kamu sedang mencari turunan pangkat dari fungsi tersebut atau pangkatnya menjadi lebih kecil. <br>Misal, jika variabel x2 diturunkan terhadap x, maka derajat variabelnya akan berkurang 1 menjadi x. Jika variabel x3 diturunkan terhadap x, maka derajat variabelnya akan berkurang 1 menjadi x2 dan seterusnya. Perhatikan contoh berikut.<br>
+f(x) = 6x^4 + 2x^3 → f’(x) = (4)(6)x3 + (3)(2)x2 = 24x^3 + 6x^2</p>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    
+
+
+
+
+<section id="calculator" class="section">
+    <h1>Kalkulator Turunan</h1>
+    <div class="calculator-container">
+        <label for="function">Masukkan Fungsi f(x):</label>
+        <input type="text" id="function" placeholder="Contoh: 3x^2 + 5x + 2">
+        <button onclick="calculateDerivative()">Hitung Turunan</button>
+        <div id="result"></div>
+    </div>
+    <!-- Link ke halaman Quiz -->
+    <div style="text-align: center; margin-top: 2rem;">
+        <a href="quiz.html" class="start-button">Lanjut ke Quiz</a>
+    </div>
+</section>
+
+
+    <!-- Bagian Tim -->
+    <section id="team" class="section">
+        <h2>Tim Kami</h2>
+        <div class="team-container">
+            <div class="team-card">
+                <img src="abil.jpg" alt="Abil" class="team-image">
+                <h3>Muhammad AbilNur</h3>
+                <p>Ketua Tim</p>
+            </div>
+            <div class="team-card">
+                <div class="team-icon">👩‍💻</div>
+                <h3>Jane Doe</h3>
+                <p>Backend Developer</p>
+            </div>
+            <div class="team-card">
+                <div class="team-icon">🎨</div>
+                <h3>Mike Smith</h3>
+                <p>UI/UX Designer</p>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="scripts.js"></script>
+</body>
+</html>
